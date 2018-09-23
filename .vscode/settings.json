@@ -1,0 +1,21 @@
+// Set the languages that the extension will be activated.  e.g. ["html","xml","php"]. Use ["*"] to activate for all languages.
+"auto-close-tag.activationOnLanguage": [
+    "xml",
+    "php",
+    "blade",
+    "ejs",
+    "jinja",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "plaintext",
+    "markdown",
+    "vue",
+    "liquid",
+    "erb",
+    "lang-cfml",
+    "cfml",
+    "HTML (Eex)",
+    "twig"
+  ]
