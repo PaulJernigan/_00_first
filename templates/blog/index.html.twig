@@ -3,6 +3,24 @@
 {% block title %} Salut {{ controller_name }}!{% endblock %}
 
 {% block body %}
+<section class="articles">
+    
+    {% for article in articles %}
+        <article>
+        <h2>{{ article.title }}</h2>
+        <div class="metadata">Ecrit le {{ article.createdAt | date('d/m/Y') }} à 
+        {{ article.createdAt | date('H:i') }} dans la catégorie Politique</div>
 
+        <img src="{{ article.image }}">
+        <div class="content">
+            
+            <p>{{ article.content | raw }}</p>
+        </div>
+        <a href="{{ path('blog_show',{'id' : article.id}) }}" class="btn btn-primary">lire la suite</a>
+        </article>
+    {% endfor %}
+    
+
+</section>
     
 {% endblock %}
